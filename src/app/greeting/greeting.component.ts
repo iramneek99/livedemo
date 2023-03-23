@@ -18,6 +18,9 @@ export class GreetingComponent {
     if(this.service.getdata() != null && this.route.snapshot.component?.name != 'PersonalComponent') {
       this.name = this.service.getdata()?.name;
     }
+    if(this.route.snapshot.component?.name == 'PersonalComponent') {
+      this.name = 'there';
+    }
     
     if(this.route.snapshot.component?.name == 'AddressComponent') {
       this.message = 'almost there!!';
