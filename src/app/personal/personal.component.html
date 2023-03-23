@@ -1,0 +1,18 @@
+<app-greeting></app-greeting>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" [(ngModel)]="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label>Age</label>
+        <input type="text" class="form-control" [(ngModel)]="age" placeholder="Enter age">
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary" (click)="sendData()">Next</button>
